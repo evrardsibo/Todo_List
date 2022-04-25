@@ -2,6 +2,7 @@
     :root{
         --font-family: 'Square Peg', cursive;
         --primary:#3498db;
+        --danger:red;
         --dark:#2c3e50;
         --background-light:#ecf0f1;
         --text-color:#444;
@@ -33,6 +34,15 @@
         margin-bottom: 1rem;
     }
 
+    ul{
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .low-opacity{
+        opacity: 0.5;
+    }
+
     /* container */
     .container{
         /* 1.6 rem taille utilise dans le nav */
@@ -55,12 +65,23 @@
         cursor: pointer;
         border-radius: 3px;
         margin:0 5px;
+        box-shadow: var(--box-shadow);
 
     }
 
-    .btn{
+    .btn-primary{
         background-color:var(--primary);
         color:var(--text-color-light);
+    }
+
+    .btn-danger{
+        background-color:var(--danger);
+        color:var(--text-color-light); 
+    }
+
+    .btn-small{
+        padding: 5px 10px;
+        font-size: 1.4rem;
     }
 
     /* header */
@@ -124,5 +145,22 @@
         border: var(--border);
         border-radius: 3px;
         padding:10px 15px ;
+    }
+
+    .todo-item{
+       display: flex; 
+       flex-flow: row;
+       align-items: center;
+       margin-bottom: 0.5rem;
+       padding: 0.3rem 1.5rem;
+    }
+
+    .todo-item:nth-child(odd) {
+        background-color: var(--background-light);
+    }
+
+    .todo-name{
+        flex: 1;
+        margin-right: 0.5rem;
     }
     
