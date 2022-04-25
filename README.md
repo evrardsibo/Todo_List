@@ -7,7 +7,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
 
-Realization of a solo TODO_LIST
+Realization of a solo project TODO_LIST
 
 ![Preview](/assets/images/todo_list.png)
 
